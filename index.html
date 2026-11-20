@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GTA Store · Powered by GTA Hub</title>
+<meta name="description" content="A gamified, store-style app for every Grand Theft Auto game, built on GTA Hub data.">
+<meta name="theme-color" content="#0b0614">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/"><span class="logo">GTA</span><span class="brand-sub">STORE</span></a>
+  <div class="hud" id="hud"></div>
+</header>
+<main id="view" tabindex="-1"></main>
+<nav class="tabbar" id="tabbar">
+  <a href="#/" data-tab="home"><i>🏪</i><span>Store</span></a>
+  <a href="#/search" data-tab="search"><i>🔎</i><span>Search</span></a>
+  <a href="#/quiz" data-tab="quiz"><i>🎯</i><span>Heists</span></a>
+  <a href="#/garage" data-tab="garage"><i>🚗</i><span>Garage</span></a>
+  <a href="#/career" data-tab="career"><i>⭐</i><span>Career</span></a>
+</nav>
+<div id="sheet" class="sheet" hidden></div>
+<div id="fx" aria-live="polite"></div>
+<canvas id="confetti"></canvas>
+<script src="js/app.js"></script>
+</body>
+</html>
