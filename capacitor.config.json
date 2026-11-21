@@ -1,0 +1,27 @@
+{
+  "appId": "com.abinashspace.gtastore",
+  "appName": "GTA Store",
+  "webDir": "www",
+  "backgroundColor": "#000000",
+  "server": {
+    "androidScheme": "https",
+    "hostname": "localhost"
+  },
+  "android": {
+    "backgroundColor": "#000000"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "backgroundColor": "#000000",
+      "launchAutoHide": true,
+      "launchShowDuration": 1500,
+      "androidScaleType": "CENTER_INSIDE",
+      "showSpinner": false
+    },
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "DARK",
+      "initialViewportFitValueHint": "cover"
+    }
+  }
+}

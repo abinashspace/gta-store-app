@@ -13,8 +13,8 @@
   --danger:#ff453a;
   --r:20px;
   --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,"Segoe UI",system-ui,sans-serif;
-  --safe-t:env(safe-area-inset-top,0px);
-  --safe-b:env(safe-area-inset-bottom,0px);
+  --safe-t:var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --safe-b:var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
   --tab-h:calc(78px + var(--safe-b));
   --ease:cubic-bezier(.2,.8,.2,1);
   --spring:cubic-bezier(.2,.85,.3,1.15);

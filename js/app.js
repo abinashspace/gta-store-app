@@ -530,5 +530,6 @@ addEventListener('hashchange', route);
     await loadAll((d,n)=>{ const b=$('#lb'); if(b) b.style.width=(100*d/n)+'%'; });
   }catch(err){ console.warn(err); $('#view').innerHTML=`<div class="empty"><h2 class="page-title">Unable to load</h2><p>Couldn’t reach GTA Hub. Check your connection and try again.</p><button class="btn" onclick="location.reload()" style="margin-top:12px">Retry</button></div>`; return; }
   touchStreak(); dailyToday(); route();
-  if('serviceWorker' in navigator && location.protocol!=='file:') navigator.serviceWorker.register('sw.js').catch(()=>{});
+  const nativeShell=!!(window.Capacitor&&window.Capacitor.isNativePlatform&&window.Capacitor.isNativePlatform())||(location.protocol==='https:'&&location.hostname==='localhost'&&!location.port);
+  if('serviceWorker' in navigator && location.protocol!=='file:' && !nativeShell) navigator.serviceWorker.register('sw.js').catch(()=>{});
 })();

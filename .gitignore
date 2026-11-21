@@ -1,2 +1,30 @@
+# Local tool installs (already used by the screenshot helper)
 tools/node_modules/
 tools/package-lock.json
+
+# Capacitor / Node
+node_modules/
+www/
+dist/
+
+# Android signing — never commit the keystore or passwords
+android-signing/
+*.jks
+*.keystore
+keystore.properties
+
+# Android build output and IDE
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/app/release/
+android/app/debug/
+android/captures/
+android/.idea/
+android/*.iml
+*.apk
+*.aab
+*.ap_
+
+.DS_Store

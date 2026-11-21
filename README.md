@@ -20,3 +20,23 @@ Run locally: `python3 -m http.server` in this folder, then open http://localhost
 Screenshots: `screenshots/` (v1) and `screenshots/v2/` (Apple Games redesign), taken with `tools/shoot.js` (Playwright + Chrome, 390×844).
 
 Fan project, not affiliated with Rockstar Games.
+
+## Android app
+
+A Capacitor 8 Android wrapper ships in `android/`. The web UI is bundled into the APK so the shell works offline; live data and artwork still load from [GTA Hub](https://abinashspace.github.io/gta-hub/) at runtime.
+
+- **Package:** `com.abinashspace.gtastore`
+- **Min / target SDK:** 24 / 36
+- **Release:** [v1.0.0](https://github.com/abinashspace/gta-store-app/releases/tag/v1.0.0) — download [GTA-Store-v1.0.0.apk](https://github.com/abinashspace/gta-store-app/releases/download/v1.0.0/GTA-Store-v1.0.0.apk)
+
+To rebuild a signed release APK (requires JDK 21 and the Android SDK):
+
+```bash
+npm install
+npm run build:apk
+# APK: android/app/build/outputs/apk/release/app-release.apk
+```
+
+`npm run cap:sync` copies the GitHub Pages files into `www/` (without the service worker) and syncs them into the Android project. The Pages site at the repo root is unchanged.
+
+The release keystore lives in `android-signing/` on the build machine and is gitignored. Keep a backup of that folder if you will publish updates signed with the same key.
