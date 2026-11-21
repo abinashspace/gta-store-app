@@ -4,32 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>GTA Store</title>
-<meta name="description" content="A game-store app for every Grand Theft Auto title, powered by GTA Hub.">
-<meta name="theme-color" content="#000000">
+<meta name="description" content="A calm, fast companion for every Grand Theft Auto title, powered by GTA Hub.">
+<meta name="theme-color" content="#110e0c">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="GTA Store">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-<a class="profile" href="#/career" id="hud" aria-label="Profile"></a>
+<header class="topbar">
+  <a class="search-btn" href="#/search" data-tab="search" aria-label="Search">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+  </a>
+  <a class="profile" href="#/career" id="hud" aria-label="Profile"></a>
+</header>
 <main id="view" tabindex="-1"></main>
 <nav class="tabbar" id="tabbar" aria-label="Main">
   <div class="tab-pill">
     <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z"/></svg><span>Home</span></a>
-    <a href="#/games" data-tab="games"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="3"/><path d="M8 7V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M8 13h0M16 11v4"/></svg><span>Arcade</span></a>
-    <a href="#/quiz" data-tab="quiz"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="9" r="3.2"/><circle cx="16" cy="14.5" r="3.2"/><path d="M5.2 15.2a5.2 5.2 0 0 0 5.4 1.1M18.8 9.2a5.2 5.2 0 0 0-5.4-1.1"/></svg><span>Heists</span></a>
-    <a href="#/garage" data-tab="garage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V8.8L12 4l6 4.8V20"/><path d="M10 20v-6h4v6"/></svg><span>Library</span></a>
+    <a href="#/games" data-tab="games"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Explore</span></a>
+    <a href="#/quiz" data-tab="quiz"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.2"/></svg><span>Heists</span></a>
+    <a href="#/garage" data-tab="garage"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V8.8L12 4l6 4.8V20"/><path d="M10 20v-6h4v6"/></svg><span>Collection</span></a>
   </div>
-  <a href="#/search" data-tab="search" class="tab-search" aria-label="Search">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
-  </a>
 </nav>
 <div id="sheet" class="sheet" hidden></div>
 <div id="fx" aria-live="polite"></div>

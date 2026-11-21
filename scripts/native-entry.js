@@ -10,7 +10,7 @@ import { Browser } from '@capacitor/browser';
 if (!Capacitor.isNativePlatform()) {
   // no-op in a browser preview of www/
 } else {
-  // Light glyphs on the dark Apple Games UI.
+  // Light glyphs on the dark store UI.
   SystemBars.setStyle({ style: SystemBarsStyle.Dark }).catch(() => {});
 
   App.addListener('backButton', ({ canGoBack }) => {

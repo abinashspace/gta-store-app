@@ -1,8 +1,8 @@
 {
   "name": "gta-store",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "GTA Store — Apple Games-style PWA and Capacitor Android app, powered by GTA Hub.",
+  "description": "GTA Store \u2014 a calm, fast companion for every Grand Theft Auto title, powered by GTA Hub.",
   "scripts": {
     "sync-www": "node scripts/sync-www.js",
     "cap:sync": "npm run sync-www && npx cap sync android",

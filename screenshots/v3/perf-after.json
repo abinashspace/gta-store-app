@@ -1,0 +1,33 @@
+{
+  "label": "after",
+  "runs": {
+    "home_cold": {
+      "fcp_ms": 104,
+      "home_interactive_ms": 190,
+      "paints": {
+        "first-paint": 104,
+        "first-contentful-paint": 104
+      },
+      "responseStart": 2,
+      "domContentLoaded": 102,
+      "load": 102
+    },
+    "home_repeat": {
+      "fcp_ms": 84,
+      "home_interactive_ms": 91,
+      "paints": {
+        "first-paint": 84,
+        "first-contentful-paint": 84
+      }
+    },
+    "game_page_from_home": {
+      "game_open_ms": 81
+    },
+    "game_page_cold_hash": {
+      "game_open_ms": 305
+    },
+    "search_results": {
+      "search_results_ms": 163
+    }
+  }
+}

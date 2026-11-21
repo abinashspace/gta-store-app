@@ -1,13 +1,13 @@
 {
   "name": "GTA Store — powered by GTA Hub",
   "short_name": "GTA Store",
-  "description": "A game-store app for every Grand Theft Auto title, powered by GTA Hub.",
+  "description": "A calm, fast companion for every Grand Theft Auto title, powered by GTA Hub.",
   "start_url": "./#/",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#110e0c",
+  "theme_color": "#110e0c",
   "icons": [
     {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
     {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
